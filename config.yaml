@@ -2,3 +2,10 @@ baseURL: https://stonedtolife.com/
 title: Stoned to Life
 theme: PaperMod
 languageCode: en-us
+
+menu:
+  main:
+    - identifier: 'about'
+      name: 'About'
+      url: '/about'
+      weight: 10
