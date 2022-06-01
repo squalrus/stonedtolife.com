@@ -1,7 +1,10 @@
 baseURL: https://stonedtolife.com/
-title: Stoned to Life
-theme: PaperMod
+copyright: Renee Schulz
+enableRobotsTXT: true
+googleAnalytics: G-FLXJ3MWGGM
 languageCode: en-us
+theme: PaperMod
+title: Stoned to Life
 
 menu:
   main:
