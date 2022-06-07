@@ -3,12 +3,93 @@ copyright: Renee Schulz
 enableRobotsTXT: true
 googleAnalytics: G-FLXJ3MWGGM
 languageCode: en-us
-theme: PaperMod
+theme: forty
 title: Stoned to Life
 
-menu:
-  main:
-    - identifier: 'about'
-      name: 'About'
-      url: '/about'
-      weight: 10
+params:
+  # Provide your metadata here.
+  name: "Stoned to Life"
+  description: "Rocks and painting rocks and the people who paint rocks"
+  favicon: "favicon.ico"
+
+  banner:
+    # To change the background image on the homepage banner, replace 'banner.jpg' in
+    # the 'static/img' folder.
+    title: "Hi, my name is Renee"
+    subtitle: "A SITE DEDICATED TO ROCKS AND PAINTING ROCKS AND THE PEOPLE WHO PAINT ROCKS."
+    buttonText: "Let's rock!"
+
+    # 404 error customization
+  error404:
+    heading: "Nothing found under this rock"
+    text: "Try visiting [this page](/) instead"
+
+  # Navigation Section
+  navigation:
+    title: "Stoned"
+    subtitle: "To Life"
+    menu: "Menu"
+
+    links:
+      - name: "Home"
+        url: "/"
+      - name: "About"
+        url: "/about/"
+      - name: "Blog"
+        url: "/blog/"
+      - name: "Report a Rock Finding"
+        url: "/report-a-rock-finding/"
+      - name: "Take What You Need"
+        url: "/take-what-you-need/"
+      - name: "Portfolio"
+        url: "/portfolio/"
+      - name: "Contact"
+        url: "/contact/"
+
+  tiles:
+    enable: true
+
+    showcase:
+      - title: "About"
+        subtitle: "How it all began"
+        image: "pic01.jpg"
+        url: "/about/"
+      - title: "Blog"
+        subtitle: "All the latest"
+        image: "pic02.jpg"
+        url: "/blog/"
+      - title: "Report a rock finding"
+        subtitle: "Show me what you've got"
+        image: "pic03.jpg"
+        url: "/report-a-rock-finding/"
+      - title: "Take what you need"
+        subtitle: "Pick up a little pick me up"
+        image: "pic04.jpg"
+        url: "/take-what-you-need/"
+      - title: "Portfolio"
+        subtitle: "Past work"
+        image: "pic05.jpg"
+        url: "/portfolio/"
+      - title: "Contact"
+        subtitle: "You've got mail"
+        image: "pic06.jpg"
+        url: "/contact/"
+
+  # Footer section
+  footer:
+    enable: true
+    copyright: "Stoned to Life"
+
+    # Uses font awesome icons
+    social:
+      - icon: "fa-twitter"
+        url: "https://www.twitter.com/Stoned2Life"
+        label: "Twitter"
+      - icon: "fa-envelope"
+        url: "mailto:renee.stoned2life@gmail.com"
+        label: "Email"
+
+    quicklinks:
+      - text: "Design: "
+        url: "https://www.html5up.net"
+        alt: "HTML5 UP"
