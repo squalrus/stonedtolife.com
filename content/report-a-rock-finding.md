@@ -1,4 +1,5 @@
 ---
+layout: report-a-rock-finding
 title: "Report A Rock Finding"
 date: 2022-06-07T03:09:24.906Z
 ---

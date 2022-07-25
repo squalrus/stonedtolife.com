@@ -13,17 +13,26 @@
                             <h1>{{ .Title}}</h1>
                         </header>
                         {{ .Content }}
-                        <form name="contact" method="POST" netlify>
+                        <form name="report-a-rock-finding" method="POST" netlify>
                             <p>
-                                <label>Name: <input type="text" name="name" /></label>
+                                <label>Your name: <input type="text" name="name" /></label>
                             </p>
                             <p>
-                                <label>Email*: <input type="email" name="email" required /></label>
+                                <label>Location of found rock: <textarea name="location"></textarea></label>
                             </p>
                             <p>
-                                <label>What do you have to say*: <textarea name="message" required></textarea></label>
+                                <label>Rock description: <textarea name="description"></textarea></label>
                             </p>
-                            <p>* denotes required field</p>
+                            <p>
+                                <label>Rock picture: <input type="file" name="picture" /></label>
+                            </p>
+                            <p>
+                                <label>How did you feel when you found the rock: <textarea name="feeling"></textarea></label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="permission" name="permission" />
+                                <label for="permission">I give permission to share my story </label>
+                            </p>
                             <p>
                                 <button type="submit">Send</button>
                             </p>
