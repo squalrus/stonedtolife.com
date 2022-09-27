@@ -1,0 +1,25 @@
+.pswp-gallery--portfolio {
+    grid-gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    position: relative;
+    width: 100%;
+}
+
+.pswp-gallery--portfolio a {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    padding-bottom: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.pswp-gallery--portfolio img {
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
