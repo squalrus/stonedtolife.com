@@ -15,79 +15,13 @@
                             <h1>{{ .Title}}</h1>
                         </header>
                         {{ .Content }}
+
                         <div class="pswp-gallery pswp-gallery--portfolio" id="gallery">
-                            <a href="/img/portfolio/image001.jpg" data-pswp-width="4000" data-pswp-height="3000" target="_blank">
-                                <img src="/img/portfolio/image001.jpg" alt="" loading="lazy" />
+                            {{ range sort .Params.Images "filename" "desc" }} {{ $height := "4000" }} {{ $width := "3000" }} {{ if .landscape }} {{ $height = "3000" }} {{ $width = "4000" }} {{ end }}
+                            <a href="/img/portfolio/{{.filename}}.jpg" data-pswp-width="{{$width}}" data-pswp-height="{{$height}}" target="_blank">
+                                <img src="/img/portfolio/{{.filename}}-thumb.jpg" alt="{{.description}}" loading="lazy" />
                             </a>
-                            <a href="/img/portfolio/image002.jpg" data-pswp-width="3000" data-pswp-height="4000" target="_blank">
-                                <img src="/img/portfolio/image002.jpg" alt="" loading="lazy" />
-                            </a>
-                            <a href="/img/portfolio/image003.jpg" data-pswp-width="4000" data-pswp-height="3000" target="_blank">
-                                <img src="/img/portfolio/image003.jpg" alt="" loading="lazy" />
-                            </a>
-                            <a href="/img/portfolio/image004.jpg" data-pswp-width="3000" data-pswp-height="4000" target="_blank">
-                                <img src="/img/portfolio/image004.jpg" alt="" loading="lazy" />
-                            </a>
-                            <a href="/img/portfolio/image005.jpg" data-pswp-width="3000" data-pswp-height="4000" target="_blank">
-                                <img src="/img/portfolio/image005.jpg" alt="" loading="lazy" />
-                            </a>
-                            <a href="/img/portfolio/image006.jpg" data-pswp-width="3000" data-pswp-height="4000" target="_blank">
-                                <img src="/img/portfolio/image006.jpg" alt="" loading="lazy" />
-                            </a>
-                            <a href="/img/portfolio/image007.jpg" data-pswp-width="3000" data-pswp-height="4000" target="_blank">
-                                <img src="/img/portfolio/image007.jpg" alt="" loading="lazy" />
-                            </a>
-                            <a href="/img/portfolio/image008.jpg" data-pswp-width="3000" data-pswp-height="4000" target="_blank">
-                                <img src="/img/portfolio/image008.jpg" alt="" loading="lazy" />
-                            </a>
-                            <a href="/img/portfolio/image009.jpg" data-pswp-width="3000" data-pswp-height="4000" target="_blank">
-                                <img src="/img/portfolio/image009.jpg" alt="" loading="lazy" />
-                            </a>
-                            <a href="/img/portfolio/image010.jpg" data-pswp-width="3000" data-pswp-height="4000" target="_blank">
-                                <img src="/img/portfolio/image010.jpg" alt="" loading="lazy" />
-                            </a>
-                            <a href="/img/portfolio/image011.jpg" data-pswp-width="3000" data-pswp-height="4000" target="_blank">
-                                <img src="/img/portfolio/image011.jpg" alt="" loading="lazy" />
-                            </a>
-                            <a href="/img/portfolio/image012.jpg" data-pswp-width="3000" data-pswp-height="4000" target="_blank">
-                                <img src="/img/portfolio/image012.jpg" alt="" loading="lazy" />
-                            </a>
-                            <a href="/img/portfolio/image013.jpg" data-pswp-width="3000" data-pswp-height="4000" target="_blank">
-                                <img src="/img/portfolio/image013.jpg" alt="" loading="lazy" />
-                            </a>
-                            <a href="/img/portfolio/image014.jpg" data-pswp-width="4000" data-pswp-height="3000" target="_blank">
-                                <img src="/img/portfolio/image014.jpg" alt="" loading="lazy" />
-                            </a>
-                            <a href="/img/portfolio/image015.jpg" data-pswp-width="3000" data-pswp-height="4000" target="_blank">
-                                <img src="/img/portfolio/image015.jpg" alt="" loading="lazy" />
-                            </a>
-                            <a href="/img/portfolio/image016.jpg" data-pswp-width="4000" data-pswp-height="3000" target="_blank">
-                                <img src="/img/portfolio/image016.jpg" alt="" loading="lazy" />
-                            </a>
-                            <a href="/img/portfolio/image017.jpg" data-pswp-width="3000" data-pswp-height="4000" target="_blank">
-                                <img src="/img/portfolio/image017.jpg" alt="" loading="lazy" />
-                            </a>
-                            <a href="/img/portfolio/image018.jpg" data-pswp-width="3000" data-pswp-height="4000" target="_blank">
-                                <img src="/img/portfolio/image018.jpg" alt="" loading="lazy" />
-                            </a>
-                            <a href="/img/portfolio/image019.jpg" data-pswp-width="3000" data-pswp-height="4000" target="_blank">
-                                <img src="/img/portfolio/image019.jpg" alt="" loading="lazy" />
-                            </a>
-                            <a href="/img/portfolio/image020.jpg" data-pswp-width="3000" data-pswp-height="4000" target="_blank">
-                                <img src="/img/portfolio/image020.jpg" alt="" loading="lazy" />
-                            </a>
-                            <a href="/img/portfolio/image021.jpg" data-pswp-width="4000" data-pswp-height="3000" target="_blank">
-                                <img src="/img/portfolio/image021.jpg" alt="" loading="lazy" />
-                            </a>
-                            <a href="/img/portfolio/image022.jpg" data-pswp-width="4000" data-pswp-height="3000" target="_blank">
-                                <img src="/img/portfolio/image022.jpg" alt="" loading="lazy" />
-                            </a>
-                            <a href="/img/portfolio/image023.jpg" data-pswp-width="3000" data-pswp-height="4000" target="_blank">
-                                <img src="/img/portfolio/image023.jpg" alt="" loading="lazy" />
-                            </a>
-                            <a href="/img/portfolio/image024.jpg" data-pswp-width="4000" data-pswp-height="3000" target="_blank">
-                                <img src="/img/portfolio/image024.jpg" alt="" loading="lazy" />
-                            </a>
+                            {{end}}
                         </div>
                     </div>
                 </section>
