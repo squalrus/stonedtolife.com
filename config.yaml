@@ -1,7 +1,7 @@
 baseURL: https://stonedtolife.com/
 copyright: Renee Schulz
 enableRobotsTXT: true
-googleAnalytics: G-FLXJ3MWGGM
+googleAnalytics: # GA template override
 languageCode: en-us
 theme: forty
 title: Stoned to Life
