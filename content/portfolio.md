@@ -41,6 +41,11 @@ images:
     landscape: true
   - filename: image026
   - filename: image027
+  - filename: image028
+    landscape: true
+  - filename: image029
+  - filename: image030
+    landscape: true
 ---
 
 A collection of some past works by me and/or my children.
