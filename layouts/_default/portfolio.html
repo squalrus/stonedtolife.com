@@ -17,8 +17,8 @@
                         {{ .Content }}
 
                         <div class="pswp-gallery pswp-gallery--portfolio" id="gallery">
-                            {{ range sort .Params.Images "filename" "desc" }} {{ $height := "4000" }} {{ $width := "3000" }} {{ if .landscape }} {{ $height = "3000" }} {{ $width = "4000" }} {{ end }}
-                            <a href="/img/portfolio/{{.filename}}.jpg" data-pswp-width="{{$width}}" data-pswp-height="{{$height}}" target="_blank">
+                            {{ range sort .Params.Images "filename" "desc" }}
+                            <a href="/img/portfolio/{{.filename}}.jpg" data-pswp-width="{{.width}}" data-pswp-height="{{.height}}" target="_blank">
                                 <img src="/img/portfolio/{{.filename}}-thumb.jpg" alt="{{.description}}" loading="lazy" />
                             </a>
                             {{end}}
