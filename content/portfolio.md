@@ -102,6 +102,12 @@ images:
   - filename: image033
     height: 4000
     width: 3000
+  - filename: image034
+    height: 3000
+    width: 4000
+  - filename: image035
+    height: 4000
+    width: 3000
 ---
 
 A collection of some past works by me and/or my children.
